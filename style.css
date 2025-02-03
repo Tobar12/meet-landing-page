@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    width: 193px;
+    padding: 16px;
+    border-radius: 29px;
+    border: none;
+    font-family: "Red Hat Display", serif;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__image__desktop {
+    display: none;
+}
+
+.main__image {
+    padding-top: 64px;
+    width: 115vw;
+}
+
+.main__downloaddiv {
+    padding: 48px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.main__downloaddiv h1 {
+    font-family: "Red Hat Display", serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #28283D;
+    text-align: center;
+    line-height: 110%;
+}
+
+.main__downloaddiv p {
+    font-family: "Red Hat Display", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #87879D;
+    text-align: center;
+    line-height: 150%;
+}
+
+.main__downloaddiv__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.main__downloaddiv__buttons__buttonone {
+    background-color: #4D96A9;
+}
+
+.main__downloaddiv__buttons__buttonone__text {
+    color: #8FE3F9;
+}
+
+.main__downloaddiv__buttons__buttontwo {
+    background-color: #855FB1;
+    width: 161px;
+}
+
+.main__downloaddiv__buttons__buttonthree {
+    background-color: #855FB1;
+}
+
+.main__downloaddiv__buttons__buttonthree__text {
+    color: #D9B8FF;
+}
+
+.main__description {
+    padding: 32px 32px 64px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.pendulum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pendulum__line {
+    width: 0px;
+    height: 80px;
+    border: 0.5px solid #D1D1DF;
+}
+
+.pendulum__circle {
+    border: 1px solid #D1D1DF;
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    padding: 16px 19px;
+    font-family: "Red Hat Display", serif;
+    font-weight: 900;
+    color: #87879D;
+}
+
+.main__description__images {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 16px;
+}
+
+.main__description__images__images {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.main__description__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__description__description__message {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main__description__description__message p {
+    font-family: "Red Hat Display", serif;
+    font-weight: 900;
+    font-size: 0.75rem;
+    color: #4D96A9;
+    text-align: center;
+    line-height: 110%;
+    letter-spacing: 4px;
+}
+
+.main__description__description__message h1 {
+    font-family: "Red Hat Display", serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #28283D;
+    text-align: center;
+    line-height: 110%;
+}
+
+.main__description__description {
+    font-family: "Red Hat Display", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #87879D;
+    text-align: center;
+    line-height: 150%;
+}
+
+.pendulum2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -28px;
+}
+
+.footer__main {
+    height: 400px;
+    background-image: linear-gradient(#4D96A9E6, #4D96A9E6), url(img/mobile/image-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 64px 32px;
+    box-sizing: border-box;
+}
+
+.footer__main h1 {
+    font-family: "Red Hat Display", serif;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 110%;
+}
+
+.footer__main p {
+    font-family: "Red Hat Display", serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 150%;
+}
+
+@media (min-width: 768px) {
+    .main__downloaddiv {
+        padding: 72px 160px 64px 160px;
+    }
+    .main__downloaddiv__buttons {
+        flex-direction: row;
+    }
+    .main__description__images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .main__description__description {
+        padding: 0px 132px;
+    }
+    .footer__main {
+        background-image: linear-gradient(#4D96A9E6, #4D96A9E6), url(img/tablet/image-footer.jpg);
+        padding: 64px 132px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .main__image {
+        display: none;
+    }
+    .main__image__desktop {
+        display: block;
+        width: 25%;
+    }
+    .main__introduction {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 64px;
+        gap: 32px;
+    }
+    .main__image__desktopone {
+        align-self: flex-start;
+        margin-bottom: 50px;
+        margin-left: -30px;
+    }
+    .main__image__desktoptwo {
+        align-self: flex-end;
+        margin-top: 50px;
+        margin-right: -30px;
+    }
+    .main__downloaddiv {
+        padding: 0px;
+        align-self: center;
+        width: 32%;
+    }
+    .main__description__images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 0px 160px;
+    }
+    .main__description__description {
+        padding: 0px 132px;
+        width: 38%;
+    }
+    .main__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__main {
+        background-image: linear-gradient(#4D96A9E6, #4D96A9E6), url(img/desktop/image-footer.jpg);
+        padding: 64px 160px;
+        flex-direction: row;
+        gap: 100px;
+    }
+    .footer__main p {
+        width: 30%;
+        text-align: left;
+    }
+    .footer__main h1 {
+        text-align: left;
+    }
+}
